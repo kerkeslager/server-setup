@@ -26,6 +26,6 @@ fi
 cd $DIRECTORY
 git pull
 
-if [ ! -d $DIRECTORY/.env ] ; then
-  python3 -m venv $DIRECTORY/.env
+if [ ! -d .env ] ; then
+  python3 -m venv .env
 fi
