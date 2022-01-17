@@ -37,3 +37,4 @@ pip install -r requirements.txt
 # Install gunicorn
 pip install gunicorn
 sudo cp /home/admin/server-setup/django-files/gunicorn.socket /etc/systemd/system/gunicorn.socket
+sudo cp /home/admin/server-setup/django-files/gunicorn.service /etc/systemd/system/gunicorn.service
