@@ -34,4 +34,4 @@ been run.
 * Run nginx.sh
 * Clone GITREPO into DIRECTORY
 * Create a virtualenv and install requirements
-
+* Install pip requirements from $DIRECTORY/requirements.txt
