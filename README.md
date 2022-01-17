@@ -33,5 +33,5 @@ been run.
 ## django.sh GITREPO DIRECTORY HOST
 * Run nginx.sh
 * Clone GITREPO into DIRECTORY
-* 
+* Create a virtualenv and install requirements
 
