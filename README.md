@@ -23,3 +23,9 @@ this script, as all the other scripts depend on this having been run.
 Most servers will want to log in as `admin` and run this immediately after
 running the `init-root.sh` script, as everything else depends on this having
 been run.
+
+* Install ufw and configure it to only allow SSH
+
+## nginx.sh
+* Install nginx.
+* Configure ufw to allow you to connect to Nginx over HTTP and HTTPS.
