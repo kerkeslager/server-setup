@@ -5,7 +5,7 @@ sudo apt update
 cd /home/admin
 
 # Install apt packages
-sudo apt install ufw
+sudo apt install -y ufw
 
 # Configure ufw
 sudo ufw allow OpenSSH
