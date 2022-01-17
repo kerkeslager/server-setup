@@ -29,3 +29,9 @@ been run.
 ## nginx.sh
 * Install nginx.
 * Configure ufw to allow you to connect to Nginx over HTTP and HTTPS.
+
+## django.sh GITREPO DIRECTORY HOST
+* Run nginx.sh
+* Clone GITREPO into DIRECTORY
+* 
+
