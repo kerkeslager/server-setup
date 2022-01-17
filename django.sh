@@ -16,6 +16,9 @@ GITREPO=$1
 DIRECTORY=$2
 HOST=$3
 
+# Install apt packages
+sudo apt install python3-venv
+
 if [ ! -d $DIRECTORY ] ; then
   git clone $GITREPO $DIRECTORY
 fi
@@ -26,4 +29,3 @@ git pull
 if [ ! -d $DIRECTORY/.env ] ; then
   python3 -m venv $DIRECTORY/.env
 fi
-
