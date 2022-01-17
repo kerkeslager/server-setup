@@ -8,6 +8,18 @@ It's implemented as a set of bash scripts that you'll run manually. I've made
 *some* effort to make the scripts indepotent, but I'm not making any serious
 promises there.
 
+All scripts should be run as user `admin`.
+
 ## init-root.sh
 Most servers will want to log in as root, `git clone` the repo, and run
 this script, as all the other scripts depend on this having been run.
+
+* Creates the `admin` user.
+* Grants the `admin` user `sudo` privileges.
+* Gives the `admin` user the ability to log in over `ssh` with the same `ssh`
+  key as the `root` user.
+
+## init.sh
+Most servers will want to log in as `admin` and run this immediately after
+running the `init-root.sh` script, as everything else depends on this having
+been run.
