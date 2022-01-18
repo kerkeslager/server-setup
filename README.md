@@ -35,3 +35,4 @@ been run.
 * Clone GITREPO into DIRECTORY
 * Create a virtualenv and install requirements
 * Install pip requirements from $DIRECTORY/requirements.txt
+* Install and start gunicorn
