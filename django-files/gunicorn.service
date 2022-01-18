@@ -6,9 +6,9 @@ After=network.target
 [Service]
 User=admin
 Group=www-data
-WorkingDirectory=__DIRECTORY__
+WorkingDirectory=__DIRECTORY__/src
 ExecStart=__DIRECTORY__/.env/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          myproject.wsgi:application
+          core.wsgi:application
