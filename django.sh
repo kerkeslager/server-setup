@@ -13,7 +13,7 @@ sudo apt update
 cd /home/admin
 
 GITREPO=$1
-DIRECTORY=$2
+DIRECTORY=$(readlink -f $2)
 HOST=$3
 
 # Install apt packages
