@@ -46,7 +46,7 @@ sudo systemctl enable gunicorn.socket
 
 # Add an nginx sites_avaialble
 cat /home/admin/server-setup/django-files/nginx-site-available | sed "s|__DIRECTORY__|$DIRECTORY|;s|__HOST__|$HOST|" | sudo tee /etc/nginx/sites-available/$HOST
-if [ ! -L /etc/nginx/sites-enabled/$HOST ] ; then
+if [ ! -e /etc/nginx/sites-enabled/$HOST ] ; then
   sudo ln -s /etc/nginx/sites-available/$HOST /etc/nginx/sites-enabled/$HOST
 fi
 sudo systemctl restart nginx
