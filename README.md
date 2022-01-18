@@ -37,3 +37,7 @@ been run.
 * Install pip requirements from $DIRECTORY/requirements.txt
 * Install and start gunicorn
 * Configure with nginx
+
+## https.sh HOST
+* Run nginx.sh
+* Set up an HTTPS certificate for HOST using certbot
