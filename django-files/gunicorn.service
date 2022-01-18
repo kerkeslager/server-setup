@@ -12,3 +12,6 @@ ExecStart=__DIRECTORY__/.env/bin/gunicorn \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
           core.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
