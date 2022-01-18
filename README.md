@@ -36,3 +36,4 @@ been run.
 * Create a virtualenv and install requirements
 * Install pip requirements from $DIRECTORY/requirements.txt
 * Install and start gunicorn
+* Install in sites-available and sites-enabled

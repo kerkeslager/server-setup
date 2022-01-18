@@ -39,5 +39,10 @@ pip install gunicorn
 sudo cp /home/admin/server-setup/django-files/gunicorn.socket /etc/systemd/system/gunicorn.socket
 cat /home/admin/server-setup/django-files/gunicorn.service | sed "s|__DIRECTORY__|$DIRECTORY|" | sudo tee /etc/systemd/system/gunicorn.service
 
+# Start gunicorn
 sudo systemctl start gunicorn.socket
 sudo systemctl enable gunicorn.socket
+
+# Add an nginx sites_avaialble
+cat /home/admin/server-setup/django-files/nginx-site-available | sed "s|__DIRECTORY__|$DIRECTORY|;s|__HOST__|$HOST|" | sudo tee /etc/nginx/sites-available/$HOST
+sudo ln -T -s /etc/nginx/sites-available/$HOST /etc/nginx/sites-enabled
